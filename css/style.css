@@ -235,5 +235,13 @@ body {
     -moz-box-shadow: 0 0 10px 5px rgba(0, 0, 0, .5);
 }
 
+.footer-bottom-final {
+    padding: 10px;
+    margin-left: 25px;
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+
+}
+
 
 
