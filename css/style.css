@@ -50,7 +50,7 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-weight: 600;
+    font-weight: bold;
     margin-left: 50px;
     margin-right: 50px;
     color: black;
@@ -65,11 +65,10 @@ body {
 .join-now-button a {
     text-transform: none;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
     border: 1px solid rgba(0, 0, 0, .7);
     border-radius: 50px;
     padding: 10px 20px 10px 20px;
-
 }
 
 .sign-in-button a:hover {
@@ -120,7 +119,7 @@ body {
     text-transform: none;
     text-decoration: none;
     max-width: max-content;
-    font-weight: 600;
+    font-weight: bold;
     border: 1px solid;
     border-radius: 50px;
     padding: 7px 16px 7px 16px;
@@ -134,9 +133,7 @@ body {
 
 .text-rewards {
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 410px 10px 410px;
+    padding: 10px 410px 30px 410px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -224,7 +221,7 @@ body {
     display: inline-block;
     width: 32px;
     height: 32px;
-
+    transition: 0.3s;
 }
 
 .social-icons a:hover {
@@ -240,8 +237,172 @@ body {
     margin-left: 25px;
     color: rgba(0, 0, 0, .5);
     font-size: 14px;
-
 }
 
+.sign-in {
+    padding: 50px 0 50px 0;
+}
 
+.sign-in-title {
+    text-align: center;
+    font-size: 30px;
+}
 
+.sign-in-content {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.required-field span {
+    color: #00754a;
+}
+
+.form-group {
+    padding: 20px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-control input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-control label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 0 5px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.form-control input:focus {
+    background-color: #d4e9e2;
+    outline: none;
+    border: 2px solid #006241;
+}
+
+.form-control input:focus ~ label,
+.form-control input:not(:placeholder-shown) ~ label {
+    top: 0;
+    font-size: 14px;
+    color: #000;
+    background-color: #d4e9e2;
+}
+
+.form-control input::placeholder {
+    opacity: 0;
+}
+
+.show-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.show-password svg {
+    display: block;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remember-me a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #006241;
+    line-height: 20px;
+}
+
+.remember-me input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    accent-color: #006241;
+}
+
+.remember-me label {
+    display: inline-block;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.forgot-content a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #006241;
+}
+
+.forgot-content li {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.forgot-content ul {
+    padding: 0 5px 0 5px;
+}
+
+.sign-in-confirm {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+.sign-in-confirm button {
+    border: none;
+    border-radius: 50px;
+    background-color: #006241;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 15px 20px 15px 20px;
+}
+
+.card-reward {
+    text-align: center;
+    padding: 30px 580px 30px 580px;
+}
+
+.card-reward-title h3 {
+    color: #006241;
+}
+
+.card-reward-footer button {
+    border: 1px solid #006241;
+    border-radius: 50px;
+    background-color: white;
+    color: #006241;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card-reward-footer button:hover {
+    background-color: #d4e9e2;
+}
