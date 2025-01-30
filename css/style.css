@@ -239,16 +239,24 @@ body {
     font-size: 14px;
 }
 
-.sign-in {
+.sign-in,
+.sign-up {
     padding: 50px 0 50px 0;
 }
 
-.sign-in-title {
+.sign-in-header,
+.sign-up-header {
     text-align: center;
+    padding: 0 500px 50px 500px;
+}
+
+.sign-in-header h1,
+.sign-up-header h1 {
     font-size: 30px;
 }
 
-.sign-in-content {
+.sign-in-form,
+.sign-up-form {
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 5px;
     width: 30%;
@@ -264,6 +272,13 @@ body {
 
 .form-group {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group h2 {
+    font-size: 18px;
 }
 
 .form-control {
@@ -297,14 +312,23 @@ body {
     background-color: #d4e9e2;
     outline: none;
     border: 2px solid #006241;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 12px #d4e9e2;
+    -webkit-box-shadow: 0 0 10px 12px #d4e9e2;
+    -moz-box-shadow: 0 0 10px 12px #d4e9e2;
 }
 
 .form-control input:focus ~ label,
-.form-control input:not(:placeholder-shown) ~ label {
+.form-control input:not(:placeholder-shown):focus ~ label {
     top: 0;
     font-size: 14px;
-    color: #000;
     background-color: #d4e9e2;
+}
+
+.form-control input:not(:placeholder-shown):not(:focus) ~ label {
+    top: 0;
+    font-size: 14px;
+    background-color: white;
 }
 
 .form-control input::placeholder {
@@ -344,6 +368,28 @@ body {
     height: 20px;
     margin: 0;
     accent-color: #006241;
+    cursor: pointer;
+    border: 2px solid #00754a;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.remember-me input:checked {
+    background-color: #006241;
+}
+
+.remember-me input:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .remember-me label {
@@ -367,13 +413,15 @@ body {
     padding: 0 5px 0 5px;
 }
 
-.sign-in-confirm {
+.sign-in-confirm,
+.sign-up-confirm {
     display: flex;
     justify-content: flex-end;
     padding-top: 50px;
 }
 
-.sign-in-confirm button {
+.sign-in-confirm button,
+.sign-up-confirm button {
     border: none;
     border-radius: 50px;
     background-color: #006241;
@@ -384,25 +432,36 @@ body {
     padding: 15px 20px 15px 20px;
 }
 
-.card-reward {
+.sign-in-footer {
     text-align: center;
-    padding: 30px 580px 30px 580px;
+    padding: 50px 0 50px 0;
 }
 
-.card-reward-title h3 {
+.sign-in-footer p {
+    padding: 0 580px 10px 580px;
+}
+
+.sign-in-footer h3 {
     color: #006241;
 }
 
-.card-reward-footer button {
+.sign-in-footer a {
     border: 1px solid #006241;
     border-radius: 50px;
     background-color: white;
     color: #006241;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
 }
-.card-reward-footer button:hover {
+
+.sign-in-footer a:hover {
     background-color: #d4e9e2;
+}
+
+.sign-up-header h3 {
+    color: rgba(0, 0, 0, .5);
+}
+
+.sign-up-header p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    margin: 0;
 }
