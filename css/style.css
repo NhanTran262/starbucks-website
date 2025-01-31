@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "SoDo Sans", sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .header {
@@ -113,6 +113,9 @@ body {
     margin: auto;
     color: white;
 }
+.product-home-text {
+    padding: 120px 120px;
+}
 
 .product-home-button a {
     display: flex;
@@ -133,7 +136,7 @@ body {
 
 .text-rewards {
     text-align: center;
-    padding: 10px 410px 30px 410px;
+    padding: 10px 200px 50px 200px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -221,7 +224,7 @@ body {
     display: inline-block;
     width: 32px;
     height: 32px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
