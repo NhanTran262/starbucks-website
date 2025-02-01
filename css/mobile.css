@@ -57,6 +57,79 @@
 }
 
 @media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .navbar-mobile ul {
+        list-style-type: none;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: white;
+        flex-direction: column;
+        width: 50%;
+        padding: 30px;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+    }
+
+    .navbar-mobile.active {
+        display: flex;
+    }
+
+    .navbar-mobile a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    .find-a-store a {
+        text-transform: none;
+        margin: 0;
+    }
+
+    .sign-in-button a {
+        text-transform: none;
+    }
+
+    .join-now-button a {
+        text-transform: none;
+        color: white;
+    }
+
+    .navbar-mobile ul > li {
+        padding: 20px 0;
+    }
+
+    .navbar-right,
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar-mobile {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 576px) {
