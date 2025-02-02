@@ -54,6 +54,61 @@
     .text-rewards {
         padding: 10px 100px 30px 100px;
     }
+
+    .footer-top {
+        display: none;
+    }
+
+    .footer-top-mobile {
+        display: block;
+        padding: 10px;
+    }
+
+    .dropdown-icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .dropdown-icon h2 {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-bottom-list {
+        padding-left: 10px;
+        margin: 0;
+    }
+
+    .footer-bottom-final {
+        margin: 0;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .dropdown-menu ul {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        max-height: 0;
+        transition: max-height 0.75s ease-out, opacity 0.75s ease-out;
+    }
+
+    .dropdown-menu ul.active {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -89,7 +144,7 @@
         width: 70%;
         height: 100vh;
         padding: 30px;
-        transition: 0.75s ease-out;
+        transition: right 0.75s ease-out;
     }
 
 
@@ -138,4 +193,13 @@
 }
 
 @media screen and (max-width: 576px) {
+    body {
+        width: 110vh;
+    }
+
+    .navbar-mobile ul {
+        top: 8%;
+        height: 200vh;
+    }
+
 }
