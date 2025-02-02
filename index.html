@@ -16,6 +16,7 @@
 </head>
 <body>
 <header id="header" class="header">
+
     <nav class="navbar">
         <div class="navbar-left">
             <div class="logo">
@@ -60,7 +61,6 @@
                 </li>
             </ul>
         </div>
-        <div class="menu-divider"></div>
         <div class="navbar-right">
             <div class="find-a-store">
                 <a href="find-a-store.html">
@@ -92,7 +92,7 @@
                     <a href="gift-cards.html">Gift Cards</a>
                 </li>
                 <li>
-                    <hr/>
+                    <hr class="line"/>
                 </li>
                 <li style="display: flex; justify-content: flex-start">
                     <div class="sign-in-button" style="margin-right: 20px">
@@ -253,7 +253,7 @@
             </ul>
         </div>
     </div>
-    <hr class="footer-line"/>
+    <hr class="line"/>
     <div class="footer-bottom">
         <div class="social-icons">
             <ul>
@@ -344,8 +344,10 @@
 </body>
 <script>
     document.querySelector('.menu-icon button').addEventListener('click', function () {
-        const menu = document.querySelector('.navbar-mobile');
+        const menu = document.querySelector('.navbar-mobile ul');
+        const body = document.querySelector('body');
         menu.classList.toggle('active');
+        body.classList.toggle('no-scroll');
     });
 
 </script>
